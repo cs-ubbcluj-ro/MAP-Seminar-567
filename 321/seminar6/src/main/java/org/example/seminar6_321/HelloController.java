@@ -73,12 +73,12 @@ public class HelloController {
         }
         int[] listOfNumbers = PrimeUtils.generateRandomNumbers(listLength);
 
-        //creem "job"-ul pentru fiecare thread
+        //cream "job"-ul pentru fiecare thread
         CountingJob[] listOfJobs = new CountingJob[numberOfThreads];
         for (int i = 0; i < numberOfThreads; i++) {
             listOfJobs[i] = new CountingJob(listOfNumbers, i, numberOfThreads);
         }
-        //creem thread-urile si atribuim fiecaruia un job
+        //cream thread-urile si atribuim fiecaruia un job
         Thread[] listOfThreads = new Thread[numberOfThreads];
         for (int i = 0; i < numberOfThreads; i++) {
             listOfThreads[i] = new Thread(listOfJobs[i]);
