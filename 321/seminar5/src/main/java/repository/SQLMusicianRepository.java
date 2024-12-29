@@ -18,7 +18,7 @@ public class SQLMusicianRepository extends Repository<Musician> {
     //modificat de la seminar cu relative path
     //anterior: jdbc:sqlite:D:/Facultate/Ore 2024-2025/MAP/Mine/SEMINAR4_321/musician_db.db
     //url-ul ar putea fi dat si prin parametru in constructor
-    String db_url = "jdbc:sqlite:D:\\Facultate\\Ore 2024-2025\\MAP\\Mine\\Seminar5_Mine\\src\\main\\java\\musician_db.db";
+    String db_url = "jdbc:sqlite:musician_db.db";
 
     public SQLMusicianRepository() {
         openConnection();
